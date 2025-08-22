@@ -1,0 +1,18 @@
+import 'package:flutter/material.dart';
+import 'core/theme/app_theme.dart';
+import 'core/router/app_router.dart';
+
+class KinninApp extends StatelessWidget {
+  const KinninApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Kinnin',
+      debugShowCheckedModeBanner: false,
+      theme: buildAppTheme(),
+      initialRoute: AppRoutes.loginPatient,
+      onGenerateRoute: onGenerateRoute,
+    );
+  }
+}
