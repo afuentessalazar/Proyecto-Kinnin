@@ -4,8 +4,8 @@ publish_to: "none"
 version: 1.0.0+1
 
 environment:
-  sdk: ^3.8.1             # Dart >=3.8.1 <4.0.0
-  flutter: ">=3.35.0"     # estamos en Flutter 3.35.x
+  sdk: ^3.8.1
+  flutter: ">=3.35.0"
 
 dependencies:
   flutter:
@@ -20,23 +20,6 @@ dev_dependencies:
 flutter:
   uses-material-design: true
 
-  # ----- ASSETS -----
   assets:
     - assets/images/
     - assets/icons/
-
-  # ----- FONTS -----
-  # Ajusta los nombres de archivo a los que tengas en /assets/fonts
-  fonts:
-    - family: Lobster
-      fonts:
-        - asset: assets/fonts/Lobster-Regular.ttf
-
-    - family: SFPro
-      fonts:
-        - asset: assets/fonts/SF-Pro-Display-Regular.ttf
-          weight: 400
-        - asset: assets/fonts/SF-Pro-Display-Medium.ttf
-          weight: 500
-        - asset: assets/fonts/SF-Pro-Display-Semibold.ttf
-          weight: 600
